@@ -20,7 +20,26 @@ header {
     color: white;
     padding: 15px 0;
     text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
 }
+
+.form{
+    border: 1px solid black;
+    background-color: #FFF;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #000;
+}
+
+.comandas{
+    cursor: pointer;    
+}
+
 h1 {
     margin: 0;
 }

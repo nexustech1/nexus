@@ -9,8 +9,10 @@
 <body>
 
 <header>
-    
     <h1>Sistema de Pedidos</h1>
+    <form action="/telaComanda" method="get" class="form">
+        <button type="submit" class="comandas">Comandas</button>
+    </form>
 </header>
 
 <div class="container">
@@ -61,7 +63,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><img src="coca.png" class="order-img" alt="Salada"></td>
+                    <td><img src="https://blog.biglar.com.br/wp-content/uploads/2023/11/salad-from-tomatoes-cucumber-red-onions-lettuce-leaves-healthy-summer-vitamin-menu-vegan-vegetable-food-vegetarian-dinner-table.jpeg" class="order-img" alt="Salada"></td>
                     <td>15</td>
                     <td>4x Cola-Cola lata,Obs: Gelo e Limão</td>
                     <td><button class="btn btn-danger">Concluir</button></td>
