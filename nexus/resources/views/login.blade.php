@@ -14,19 +14,15 @@
             <h1 class="titulo">Savor Bistró</h1>
             <p class="paragrafo">Faça o login para acessar sua conta</p>
             <form action="/site" method="POST">
-                <input type="email" name="email" id="email" placeholder="E-mail">
-                <input type="password" name="senha" id="email" placeholder="Senha">
+                @csrf
+                <input type="email" name="email" id="email" placeholder="E-mail" required>
+                <input type="password" name="senha" id="senha" placeholder="Senha" required>
                 <div class="botoes">
                     <button type="submit" class="botao cadastro">Cadastrar</button>
-                    <button type="submit" class="botao entrar">Entrar</button>
+                    <button type="submit" class="botao entrar" id="entrarBtn">Entrar</button>
                 </div>
             </form>
         </section>
     </main>
-    <script>
-        document.getElementById('entrarBtn').addEventListener('click', function() {
-            window.location.href = './site.blade.php'; // Or the correct path to your index file
-        });
-    </script>
 </body>
 </html>

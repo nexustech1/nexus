@@ -5,8 +5,11 @@ use App\Http\Controllers\TestController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('site');
+    return view('login');
 });
 
-Route::get('/site', [TestController::class, 'test'])->name('test');
-Route::get('/login', [loginController::class, 'login'])->name('login');
+Route::get('/login', [TestController::class, 'test'])->name('test');
+
+Route::post('/site', function () {
+    return view('site'); 
+});
